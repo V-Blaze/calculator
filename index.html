@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <section>
+        <div class="calculator">
+
+            <input type="text" class="calculator-screen" id="calc-screen" value="0" disabled />
+            <div class="topbtn">
+                <button type="button" class="navb trigger" id="history">History</button>
+                <button type="button" class="navb sci active">Normal</button>
+                <button type="button" class="navb" onclick="window.alert('COMING SOON!!')">scientific</button>
+            </div>
+
+
+            <div class="calculator-keys">
+
+                <button type="button" class="operator" id="add" value="+">+</button>
+                <button type="button" class="operator" id="subtract" value="-">-</button>
+                <button type="button" class="operator" id="multiply" value="*">&times;</button>
+                <button type="button" class="operator" id="divide" value="/">&divide;</button>
+
+                <button type="button" id="seven" class="number" value="7">7</button>
+                <button type="button" id="eight" class="number" value="8">8</button>
+                <button type="button" id="nine" class="number" value="9">9</button>
+
+
+                <button type="button" id="four" class="number" value="4">4</button>
+                <button type="button" id="five" class="number" value="5">5</button>
+                <button type="button" id="six" class="number" value="6">6</button>
+
+
+                <button type="button" id="one" class="number" value="1">1</button>
+                <button type="button" id="two" class="number" value="2">2</button>
+                <button type="button" id="three" class="number" value="3">3</button>
+
+
+                <button type="button" id="zero" class="number" value="0">0</button>
+                <button type="button" id="decimal" class="number" value=".">.</button>
+
+                <button type="button" class="delete" id="delete" value="delete"><i class="gg-backspace"></i></button>
+                <button type="button" class="all-clear" id="clear" value="all-clear">AC</button>
+
+                <button type="button" class="equal-sign" id="equal" value="=">=</button>
+
+            </div>
+
+            
+        </div>
+        <!-- Modal -->
+
+        
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">×</span>
+                <h1>Recent History!</h1>
+                <ul id="hisText">
+                        
+                </ul>
+                <button type="button" id="clearHistory">Clear</button>
+            </div>
+        </div>
+
+
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
